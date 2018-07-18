@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-actions>
+    <button 
+      color="primary" 
+      (click)="generateSrc()" 
+      mat-button 
+      mat-raised-button
+      style="font-size: 20px; font-weight: bold;">
+      Next Image
+    </button>
+  </mat-card-actions>
+  <mat-spinner [style.display]="img_is_loaded?'none':'block'" diameter="300"></mat-spinner>
+  <img 
+    [src]="src | safe" 
+    alt="New image"
+    mat-card-image [style.display]="img_is_loaded?'block':'none'">
+</mat-card>
