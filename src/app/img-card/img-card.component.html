@@ -1,4 +1,5 @@
-<mat-card>
+<mat-spinner [style.display]="img_is_loaded?'none':'block'" diameter="300" style="margin-top: 33%"></mat-spinner>
+<mat-card [style.display]="img_is_loaded?'block':'none'">
   <mat-card-actions>
     <button 
       color="primary" 
@@ -9,9 +10,8 @@
       Next Image
     </button>
   </mat-card-actions>
-  <mat-spinner [style.display]="img_is_loaded?'none':'block'" diameter="300"></mat-spinner>
   <img 
     [src]="src | safe" 
     alt="New image"
-    mat-card-image [style.display]="img_is_loaded?'block':'none'">
+    mat-card-image>
 </mat-card>

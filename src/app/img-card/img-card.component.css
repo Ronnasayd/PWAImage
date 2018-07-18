@@ -2,6 +2,10 @@
     width: 400px;
     margin: 2rem auto;
   } */
+  .mat-card{
+    padding-bottom: 0px;
+    height: 540px;
+  }
   .mat-card .mat-card-actions {
     padding-top: 0;
   }
